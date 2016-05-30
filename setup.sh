@@ -1,4 +1,4 @@
-yaourt -S compton xcb-util-xrm libxcb-xrm-dev libxcb-xrm
+yaourt -S compton rofi zsh prezto
 cp .xinitrc ~
 cp -r .i3 ~
 cd i3

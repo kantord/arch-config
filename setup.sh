@@ -1,4 +1,4 @@
-yaourt -S compton rofi zsh prezto-git ttf-font-icons ttf-font-awesome ttf-ms-fonts ttf-vista-fonts ttf-mplus gvim nautilus feh
+yaourt -S compton rofi zsh prezto-git ttf-font-icons ttf-font-awesome ttf-ms-fonts ttf-vista-fonts ttf-mplus gvim nautilus feh git-cola
 cp .xinitrc ~
 cp -r .i3 ~
 cd i3

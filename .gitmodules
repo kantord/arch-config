@@ -1,3 +1,6 @@
 [submodule "i3"]
 	path = i3
 	url = https://github.com/kdani3/i3.git
+[submodule "vimrc"]
+	path = vimrc
+	url = https://github.com/kdani3/vimrc

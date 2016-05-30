@@ -4,3 +4,6 @@
 [submodule "vimrc"]
 	path = vimrc
 	url = https://github.com/kdani3/vimrc
+[submodule "browser_opener"]
+	path = browser_opener
+	url = https://github.com/kdani3/browser_opener

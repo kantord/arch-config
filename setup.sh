@@ -1,4 +1,4 @@
-yaourt -S compton rofi zsh prezto
+yaourt -S compton rofi zsh prezto-git
 cp .xinitrc ~
 cp -r .i3 ~
 cd i3

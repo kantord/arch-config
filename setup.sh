@@ -29,5 +29,12 @@ sudo pip install --upgrade -r requirements.txt
 # custom keyboard layout
 sudo cp ~/repos/arch-config/keyboard/custom /usr/share/X11/xkb/symbols/
 
+# update user workflowrc
+ln -s ~/repos/arch-config/.workflowrc ~
+
+# enable sound
+systemctl --user enable pulseaudio.socket 
+systemctl --user start pulseaudio.socket 
+
 # restart i3
 i3-msg restart

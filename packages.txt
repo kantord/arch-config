@@ -15,3 +15,5 @@ terminator
 python-pip
 gnome-software
 htop
+pavucontrol
+pulseaudio

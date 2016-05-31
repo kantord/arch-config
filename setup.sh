@@ -20,5 +20,8 @@ sudo pip install -r requirements.txt
 # custom keyboard layout
 sudo cp ~/repos/arch-config/keyboard/custom /usr/share/X11/xkb/symbols/
 
+# update user workflowrc
+ln -s ~/repos/arch-config/.workflowrc ~
+
 # restart i3
 i3-msg restart

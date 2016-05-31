@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# install & update submodules
+git submodule update --init --recursive
+
 # install uninstalled arch packages
 for package in `comm -23 <(cat packages.txt | sort) <(yaourt -Qqe | sort)`; do
     echo "Installing $package..."

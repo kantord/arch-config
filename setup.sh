@@ -9,13 +9,22 @@ for package in `comm -23 <(cat packages.txt | sort) <(yaourt -Qqe | sort)`; do
     yaourt -S $package
 done
 
-cp .xinitrc ~
-cp -r .i3 ~
-ln -s ~/repos/arch-config/.vimrc ~
-ln -s ~/repos/arch-config/terminator ~/.config/terminator
+# links
+link() {
+    ln -s --backup ~/repos/arch-config/$1 ${2:-~}  # default value magic
+}
+
+link .xinitrc
+link .i3
+link .vimrc
+link terminator ~/.config/terminator
+
+# set up vim packages
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
-sudo pip install -r requirements.txt
+
+# set up python packages
+sudo pip install --upgrade -r requirements.txt
 
 # custom keyboard layout
 sudo cp ~/repos/arch-config/keyboard/custom /usr/share/X11/xkb/symbols/

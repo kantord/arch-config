@@ -5,3 +5,4 @@ ln -s ~/repos/arch-config/.vimrc ~
 ln -s ~/repos/arch-config/terminator ~/.config/terminator
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+sudo pip install -r requirements.txt

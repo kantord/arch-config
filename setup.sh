@@ -36,5 +36,4 @@ ln -s ~/repos/arch-config/.workflowrc ~
 systemctl --user enable pulseaudio.socket 
 systemctl --user start pulseaudio.socket 
 
-# restart i3
-i3-msg restart
+./restart_gui.sh

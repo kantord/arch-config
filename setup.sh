@@ -1,4 +1,11 @@
-yaourt -S compton rofi zsh ttf-font-icons ttf-font-awesome ttf-ms-fonts ttf-vista-fonts ttf-mplus gvim nautilus feh git-cola tig terminator python-pip gnome-software
+#!/bin/bash
+
+# install uninstalled arch packages
+for package in `comm -23 <(cat packages.txt | sort) <(yaourt -Qqe | sort)`; do
+    echo "Installing $package..."
+    yaourt -S $package
+done
+
 cp .xinitrc ~
 cp -r .i3 ~
 ln -s ~/repos/arch-config/.vimrc ~

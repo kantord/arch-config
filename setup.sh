@@ -17,5 +17,8 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 sudo pip install -r requirements.txt
 
+# custom keyboard layout
+sudo cp ~/repos/arch-config/keyboard/custom /usr/share/X11/xkb/symbols/
+
 # restart i3
 i3-msg restart

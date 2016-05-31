@@ -30,7 +30,7 @@ sudo pip install --upgrade -r requirements.txt
 sudo cp ~/repos/arch-config/keyboard/custom /usr/share/X11/xkb/symbols/
 
 # update user workflowrc
-ln -s ~/repos/arch-config/.workflowrc ~
+link .workflowrc
 
 # enable sound
 systemctl --user enable pulseaudio.socket 

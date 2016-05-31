@@ -17,3 +17,4 @@ gnome-software
 htop
 pavucontrol
 pulseaudio
+silver-searcher-git

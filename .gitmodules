@@ -7,3 +7,6 @@
 [submodule "browser_opener"]
 	path = browser_opener
 	url = https://github.com/kdani3/browser_opener
+[submodule "i3-workflow"]
+	path = i3-workflow
+	url = https://github.com/kdani3/i3-workflow

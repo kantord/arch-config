@@ -1,0 +1,47 @@
+[global_config]
+  borderless = True
+  focus = system
+  geometry_hinting = False
+  suppress_multiple_term_dialog = True
+  title_transmit_bg_color = "#d30102"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    audible_bell = True
+    background_color = "#002b36"
+    background_darkness = 0.92
+    background_image = None
+    background_type = transparent
+    cursor_color = "#dcdcdc"
+    font = M+ 2m 10
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    urgent_bell = True
+    use_system_font = False
+    visible_bell = True
+  [[Flat]]
+    background_color = "#002240"
+    background_image = None
+    cursor_color = "#e5be0c"
+    foreground_color = "#2cc55d"
+    palette = "#222d3f:#a82320:#32a548:#e58d11:#3167ac:#781aa0:#2c9370:#b0b6ba:#212c3c:#d4312e:#2d9440:#e5be0c:#3c7dd2:#8230a7:#35b387:#e7eced"
+  [[Github]]
+    background_color = "#f4f4f4"
+    background_image = None
+    cursor_color = "#3f3f3f"
+    foreground_color = "#3e3e3e"
+    palette = "#3e3e3e:#970b16:#07962a:#f8eec7:#003e8a:#e94691:#89d1ec:#ffffff:#666666:#de0000:#87d5a2:#f1d007:#2e6cba:#ffa29f:#1cfafe:#ffffff"
+    scrollback_infinite = True

@@ -18,3 +18,5 @@ htop-solarized
 pavucontrol
 pulseaudio
 silver-searcher-git
+python2
+cmake

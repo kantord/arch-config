@@ -26,6 +26,11 @@ vim +PluginInstall +qall
 # set up python packages
 sudo pip install --upgrade -r requirements.txt
 
+# rebuild YCM
+cd ~/.vim/bundle/YouCompleteMe/
+python2 install.py
+cd -
+
 # custom keyboard layout
 sudo cp ~/repos/arch-config/keyboard/custom /usr/share/X11/xkb/symbols/
 

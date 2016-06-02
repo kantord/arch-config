@@ -23,3 +23,4 @@ cmake
 ipython
 python2-pylint
 python-pylint
+unzip

@@ -20,3 +20,4 @@ pulseaudio
 silver-searcher-git
 python2
 cmake
+ipython

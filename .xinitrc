@@ -27,7 +27,6 @@ xset r rate 200 60 &
 #start-pulseaudio-x11 &
 redshift -l 47.4159197:19.0666424 &
 udiskie &
-dunst &
 #pulseaudio --start &
 synclient TouchpadOff=1 &
 xrdb ~/.Xdefault &

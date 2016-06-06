@@ -32,6 +32,7 @@ synclient TouchpadOff=1 &
 xrdb ~/.Xdefault &
 
 feh --bg-fill --magick-timeout 1 ~/.i3/wallpapers/active &
+/usr/lib/gnome-settings-daemon/gnome-settings-daemon &
 
 #exec gnome-session 
  exec i3

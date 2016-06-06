@@ -25,5 +25,7 @@ python2-pylint
 python-pylint
 unzip
 libreoffice
+zuki-themes-git
+paper-icon-theme-git
 pidgin
 purple-facebook

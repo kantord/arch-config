@@ -45,4 +45,12 @@ systemctl --user start pulseaudio.socket
 gsettings set org.gnome.desktop.interface gtk-theme Zukitre
 gsettings set org.gnome.desktop.interface icon-theme Paper
 
+# Power settings
+gsettings set org.gnome.settings-daemon.plugins.power power-button-action suspend
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 3600
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type suspend
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 1800
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type suspend
+gsettings set org.gnome.desktop.lockdown disable-lock-screen true
+
 ./restart_gui.sh

@@ -223,4 +223,3 @@ client.focused_inactive #00000000 #00000000 #ffffff
 #exec compton -bc -r 7 -l -9 -t -9 --shadow-exclude '_GTK_FRAME_EXTENTS@:c'
 exec compton --config ~/.i3/compton.conf &
 exec dunst -config ~/repos/arch-config/dunst_config &
-exec nohup /usr/lib/gnome-settings-daemon/gnome-settings-daemon > /dev/null &

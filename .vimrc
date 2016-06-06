@@ -256,3 +256,6 @@ nmap <Return> <Plug>(easymotion-overwin-line) ko
 " Autocompletion for words
 set dictionary=/usr/share/dict/words
 set complete+=k
+
+" Show hidden files
+let NERDTreeShowHidden=1

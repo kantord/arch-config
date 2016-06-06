@@ -34,9 +34,9 @@ bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
-bindsym $mod+n exec sh "/home/kdani/repos/i3lock-fancy-multimonitor/lock"
+bindsym $mod+n exec sh "~/repos/i3lock-fancy-multimonitor/lock"
 bindsym $mod+F1 exec "setxkbmap custom intl-unicode -option caps:escape"
-bindsym $mod+F8 exec "/home/kdani/repos/rofi-netctl/rofi-netctl.sh"
+bindsym $mod+F8 exec "~/repos/rofi-netctl/rofi-netctl.sh"
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
@@ -189,10 +189,10 @@ bindsym XF86AudioMicMute exec "amixer set Capture toggle"
 
 
 # scrot & gimp - root
-bindsym Print exec scrot -e 'mv $f /home/kdani/pics/screenshots'
+bindsym Print exec scrot -e 'mv $f ~/pics/screenshots'
 # scrot & gimp - select window or rectangle
-bindsym --release $mod+Print exec scrot -s -e 'mv $f /home/kdani/pics/screenshots'
-bindsym $mod+Shift+Print exec scrot -u -e 'mv $f /home/kdani/pics/screenshots'
+bindsym --release $mod+Print exec scrot -s -e 'mv $f ~/pics/screenshots'
+bindsym $mod+Shift+Print exec scrot -u -e 'mv $f ~/pics/screenshots'
 bindsym $mod+Shift+P exec terminator -T "Floating Calculator" -e "ipython"
 
 bindsym $mod+Shift+greater move container to output right

@@ -3,6 +3,9 @@
 # install & update submodules
 git submodule update --init --recursive
 
+# upgrade arch packages
+yaourt -Syu --aur --devel
+
 # install uninstalled arch packages
 for package in `comm -23 <(cat packages.txt | sort) <(yaourt -Qqe | sort)`; do
     echo "Installing $package..."
@@ -22,6 +25,7 @@ link terminator ~/.config/terminator
 # set up vim packages
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+vim +PluginUpdate +qall
 
 # set up python packages
 sudo pip install --upgrade -r requirements.txt

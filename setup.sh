@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Home directory
+mkdir -p ~/pics
+mkdir -p ~/pics/screenshots
+
 # install & update submodules
 git submodule update --init --recursive
 

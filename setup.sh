@@ -41,4 +41,8 @@ link .workflowrc
 systemctl --user enable pulseaudio.socket 
 systemctl --user start pulseaudio.socket 
 
+# De-uglifying i3
+gsettings set org.gnome.desktop.interface gtk-theme Zukitre
+gsettings set org.gnome.desktop.interface icon-theme Paper
+
 ./restart_gui.sh

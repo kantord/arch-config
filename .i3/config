@@ -37,8 +37,6 @@ bindsym $mod+Shift+q kill
 bindsym $mod+n exec sh "/home/kdani/repos/i3lock-fancy-multimonitor/lock"
 bindsym $mod+F1 exec "setxkbmap custom intl-unicode -option caps:escape"
 bindsym $mod+F8 exec "/home/kdani/repos/rofi-netctl/rofi-netctl.sh"
-bindsym $mod+F7 exec "xrandr --output eDP1 --auto && xrandr --output HDMI1 --off && xrandr --output DP2 --off"
-bindsym $mod+Shift+F7 exec "xrandr --output eDP1 --off && xrandr --output HDMI1 --auto && xrandr --output DP2 --auto"
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run

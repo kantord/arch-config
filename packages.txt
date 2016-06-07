@@ -32,3 +32,4 @@ purple-facebook
 scrot
 luakit
 nitrogen
+screen

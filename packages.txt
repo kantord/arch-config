@@ -14,7 +14,7 @@ tig
 terminator
 python-pip
 gnome-software
-htop-solarized
+htop
 pavucontrol
 pulseaudio
 silver-searcher-git

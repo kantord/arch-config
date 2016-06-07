@@ -183,4 +183,5 @@ end
 require "adblock"
 require "adblock_chrome"
 
-
+key({"Control"}, "c", "Copy (as-in control-c control-v)",
+function (w) luakit.selection.clipboard = luakit.selection.primary end),

@@ -61,4 +61,8 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-tim
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type suspend
 gsettings set org.gnome.desktop.lockdown disable-lock-screen true
 
+
+# Default applications
+xdg-settings set default-web-browser luakit.desktop
+
 ./restart_gui.sh

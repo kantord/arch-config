@@ -31,3 +31,4 @@ pidgin
 purple-facebook
 scrot
 luakit
+nitrogen

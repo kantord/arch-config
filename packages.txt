@@ -33,3 +33,4 @@ scrot
 luakit
 nitrogen
 screen
+powerline-fonts-git

@@ -3,3 +3,5 @@ node_modules/
 __pycache__/
 *.py[cod]
 *$py.class
+bower_components/
+*.swp

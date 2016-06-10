@@ -33,3 +33,6 @@ scrot
 luakit
 nitrogen
 screen
+powerline-fonts-git
+udiskie
+evince

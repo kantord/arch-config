@@ -26,6 +26,7 @@ link .i3
 link .vimrc
 link terminator ~/.config/terminator
 link luakit ~/.config/
+link .zpreztorc
 
 # set up vim packages
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

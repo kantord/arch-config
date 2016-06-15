@@ -34,7 +34,7 @@ bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
-bindsym $mod+n exec sh "~/repos/i3lock-fancy-multimonitor/lock"
+bindsym $mod+N exec "sh ~/repos/arch-config/lock.sh"
 bindsym $mod+F1 exec "setxkbmap custom intl-unicode -option caps:escape"
 bindsym $mod+F8 exec "~/repos/rofi-netctl/rofi-netctl.sh"
 

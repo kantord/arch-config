@@ -36,3 +36,6 @@ screen
 powerline-fonts-git
 udiskie
 evince
+dbus
+i3lock
+imagemagick

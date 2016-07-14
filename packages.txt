@@ -39,3 +39,4 @@ evince
 dbus
 i3lock
 imagemagick
+meld

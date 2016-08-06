@@ -8,3 +8,4 @@ bower_components/
 env/
 env2/
 env3/
+venv/

@@ -72,3 +72,6 @@ xdg-settings set default-web-browser luakit.desktop
 git config --global core.excludesfile '~/repos/arch-config/global_gitignore'
 
 ./restart_gui.sh
+
+# Set meld as default difftool
+git config --global diff.tool meld

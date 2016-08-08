@@ -55,6 +55,7 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin 'powerline/powerline'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'yegappan/greplace'
+Plugin 'Yggdroot/indentLine'
 
 
 call vundle#end()
@@ -82,17 +83,18 @@ set relativenumber
 
 
 " Look & Feel
-colorscheme solarized
+" colorscheme solarized
  "colorscheme autumnleaf
 " colorscheme flattown
 " colorscheme gruvbox
 "colorscheme inkpot
 set background=dark
+colorscheme colorsbox-material
 "set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
 "set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 11
  "set guifont=Input\ Mono\ Semi-Light\ 11
 "set guifont=Inconsolata\ 11
-set guifont=M+\ 2m\ 10
+set guifont=M+\ 2m\ 9
 set linespace=3
 set colorcolumn=80,160,240,320,400,480,560
 highlight ColorColumn guibg=Gray14
@@ -259,3 +261,10 @@ set complete+=k
 
 " Show hidden files
 let NERDTreeShowHidden=1
+
+" Hide files from tree
+let NERDTreeIgnore = ['\.pyc$', '\.cache', '__pycache__', '.git', 'env', 'env2', 'env3', 'venv']
+
+" Disable colors in shells
+let g:ConqueTerm_Color = 0
+

@@ -45,17 +45,16 @@ Plugin 'sjl/gundo.vim'
 Plugin 'koron/minimap-vim'
 Plugin 'wikitopian/hardmode'
 Plugin 'elixir-lang/vim-elixir'
-Plugin 'majutsushi/tagbar'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'reedes/vim-wordy'
 Plugin 'junegunn/limelight.vim'
 Plugin 'Chiel92/vim-autoformat'
-Plugin 'powerline/powerline'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'yegappan/greplace'
 Plugin 'Yggdroot/indentLine'
+Plugin 'itchyny/lightline.vim'
 
 
 call vundle#end()
@@ -268,3 +267,27 @@ let NERDTreeIgnore = ['\.pyc$', '\.cache', '__pycache__', '.git', 'env', 'env2',
 " Disable colors in shells
 let g:ConqueTerm_Color = 0
 
+" Hide mode (it's on the bar)
+set noshowmode
+
+" Lightline conf
+
+let g:lightline = {
+            \ 'colorscheme': 'wombat',
+            \ 'active': {
+            \   'left': [ [ 'mode', 'paste' ],
+            \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+            \ },
+            \ 'component': {
+            \   'readonly': '%{&filetype=="help"?"":&readonly?"⭤":""}',
+            \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+            \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+            \ },
+            \ 'component_visible_condition': {
+            \   'readonly': '(&filetype!="help"&& &readonly)',
+            \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+            \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+            \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+            \ }

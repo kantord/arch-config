@@ -89,11 +89,11 @@ set relativenumber
 "colorscheme inkpot
 set background=dark
 colorscheme colorsbox-material
-"set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
+set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
 "set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 11
  "set guifont=Input\ Mono\ Semi-Light\ 11
 "set guifont=Inconsolata\ 11
-set guifont=M+\ 2m\ 9
+"set guifont=M+\ 2m\ 9
 set linespace=3
 set colorcolumn=80,160,240,320,400,480,560
 highlight ColorColumn guibg=Gray14

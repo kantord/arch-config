@@ -8,14 +8,14 @@ mkdir -p ~/pics/screenshots
 git submodule update --init --recursive
 
 # upgrade arch packages
-yaourt -Syu --aur --devel
+yaourt -Syu --aur --devel --noconfirm
 
-# install uninstalled arch packages
+install uninstalled arch packages
 for package in `comm -23 <(cat packages.txt | sort) <(yaourt -Qqe | sort)`; do
-    echo "Installing $package..."
-    yaourt -S $package
+     echo "Installing $package..."
+     yaourt -S $package --noconfirm
 done
-
+ 
 # links
 link() {
     ln -s --backup ~/repos/arch-config/$1 ${2:-~}  # default value magic

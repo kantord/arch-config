@@ -208,7 +208,7 @@ for_window [title="^Floating Calculator$"] floating enable
  gaps outer 25
  gaps inner 15
 smart_gaps on
-smart_gaps_size 12
+#smart_gaps_size 12
 # smart_borders on
 
 # border color for focused window

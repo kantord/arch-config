@@ -1,3 +1,4 @@
+i3status
 xorg
 xorg-xinit
 compton

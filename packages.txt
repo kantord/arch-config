@@ -46,3 +46,4 @@ meld
 firefox
 luakit
 google-chrome
+wget

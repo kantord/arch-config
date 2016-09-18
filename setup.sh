@@ -75,3 +75,6 @@ git config --global core.excludesfile '~/repos/arch-config/global_gitignore'
 
 # Set meld as default difftool
 git config --global diff.tool meld
+
+# Install oh my zsh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"

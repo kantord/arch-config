@@ -1,3 +1,4 @@
+set encoding=utf8
 set nocompatible
 set nowrap
 filetype off 

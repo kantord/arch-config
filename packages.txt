@@ -47,3 +47,6 @@ firefox
 luakit
 google-chrome
 wget
+ifuse
+usbmuxd
+libplist

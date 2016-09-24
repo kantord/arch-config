@@ -50,3 +50,4 @@ wget
 ifuse
 usbmuxd
 libplist
+pulseaudio-alsa

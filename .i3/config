@@ -205,8 +205,8 @@ for_window [title="^Floating Calculator$"] floating enable
 #for_window [class="^Spotify$"] floating enable;border normal
 
 # gaps
- gaps outer 25
- gaps inner 15
+ gaps outer 0
+ gaps inner 25
 smart_gaps on
 #smart_gaps_size 12
 # smart_borders on

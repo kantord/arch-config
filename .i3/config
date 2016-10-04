@@ -200,13 +200,14 @@ bindsym $mod+Shift+less move container to output left
 
 for_window [class="^.*"] border pixel 1
 for_window [window_role="pop-up"] floating enable
+for_window [class="google-chrome"] floating disable
 for_window [window_role="task_dialog"] floating enable
 for_window [title="^Floating Calculator$"] floating enable
 #for_window [class="^Spotify$"] floating enable;border normal
 
 # gaps
- gaps outer 25
- gaps inner 15
+ gaps outer 0
+ gaps inner 25
 smart_gaps on
 #smart_gaps_size 12
 # smart_borders on
@@ -222,3 +223,5 @@ exec compton --config ~/.i3/compton.conf &
 exec dunst -config ~/repos/arch-config/dunst_config &
 
 no_focus [window_role="browser"]
+
+exec --no-startup-id nm-applet

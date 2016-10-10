@@ -198,6 +198,10 @@ bindsym $mod+Shift+P exec terminator -T "Floating Calculator" -e "ipython"
 bindsym $mod+Shift+greater move container to output right
 bindsym $mod+Shift+less move container to output left
 
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 12.5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 12.5 # decrease screen brightness
+
 for_window [class="^.*"] border pixel 1
 for_window [window_role="pop-up"] floating enable
 for_window [class="google-chrome"] floating disable

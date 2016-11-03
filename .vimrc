@@ -251,6 +251,9 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+if has('nvim')
+    nmap <BS> <C-W>h
+endif
 
 " Jump to line
 nmap <Return> <Plug>(easymotion-overwin-line) ko

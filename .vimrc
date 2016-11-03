@@ -295,3 +295,9 @@ let g:lightline = {
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' }
             \ }
+
+
+" No cursor blink
+set guicursor=a:blinkon0
+
+

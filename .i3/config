@@ -205,6 +205,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 12.5 # decrease screen bright
 for_window [class="^.*"] border pixel 1
 for_window [window_role="pop-up"] floating enable
 for_window [class="google-chrome"] floating disable
+for_window [class="Google-chrome"] floating disable
 for_window [window_role="task_dialog"] floating enable
 for_window [title="^Floating Calculator$"] floating enable
 #for_window [class="^Spotify$"] floating enable;border normal
@@ -225,6 +226,7 @@ client.focused_inactive #00000000 #00000000 #ffffff
 #exec compton -bc -r 7 -l -9 -t -9 --shadow-exclude '_GTK_FRAME_EXTENTS@:c'
 exec compton --config ~/.i3/compton.conf &
 exec dunst -config ~/repos/arch-config/dunst_config &
+exec --no-startup-id xautolock -time 4 -locker "sh ~/repos/arch-config/lock.sh"
 
 no_focus [window_role="browser"]
 

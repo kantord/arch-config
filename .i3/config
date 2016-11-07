@@ -202,6 +202,9 @@ bindsym $mod+Shift+less move container to output left
 bindsym XF86MonBrightnessUp exec xbacklight -inc 12.5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 12.5 # decrease screen brightness
 
+# Sticky windows
+bindsym $mod+Shift+S sticky toggle
+
 for_window [class="^.*"] border pixel 1
 for_window [window_role="pop-up"] floating enable
 for_window [class="google-chrome"] floating disable

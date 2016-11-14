@@ -52,3 +52,5 @@ usbmuxd
 libplist
 pulseaudio-alsa
 dunst
+tmux
+urxvt

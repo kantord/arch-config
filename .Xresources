@@ -13,3 +13,53 @@ rofi.color-normal: argb:0263238, #eceff1, argb:0263238, #f4246b, #eceff1
 rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
 rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
 rofi.lines:		20
+
+
+! special
+*.foreground:   #34302d
+*.background:   #f5e7de
+*.cursorColor:  #34302d
+
+! black
+*.color0:       #666661
+*.color8:       #7f7f7a
+
+! red
+*.color1:       #992e2e
+*.color9:       #b23636
+
+! green
+*.color2:       #4c3226
+*.color10:      #664233
+
+! yellow
+*.color3:       #a67c53
+*.color11:      #bf8f60
+
+! blue
+*.color4:       #4c7399
+*.color12:      #5986b2
+
+! magenta
+*.color5:       #bf9986
+*.color13:      #d9ae98
+
+! cyan
+*.color6:       #d97742
+*.color14:      #f2854a
+
+! white
+*.color7:       #34302d
+*.color15:      #4c4742
+
+urxvt.font: xft:Inconsolata\ for\ Powerline:pixelsize=14
+urxvt.boldFont: xft:Inconsolata\ for\ Powerline:pixelsize=14
+urxvt.fading: 0
+urxvt.scrollBar: None
+urxvt.termName: rxvt-256color
+urxvt.internalBorder: 4
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg5

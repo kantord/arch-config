@@ -167,7 +167,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         font pango:M+ 2c, FontAwesome 8
-        status_command i3status -c ~/.i3/i3status.conf
+        status_command ~/repos/arch-config/i3status.sh
         i3bar_command i3bar -t
         tray_output primary
         position bottom

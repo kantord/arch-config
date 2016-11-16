@@ -54,3 +54,4 @@ pulseaudio-alsa
 dunst
 tmux
 rxvt-unicode 
+conky

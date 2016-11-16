@@ -300,4 +300,5 @@ let g:lightline = {
 " No cursor blink
 set guicursor=a:blinkon0
 
-
+" System clipboard
+set clipboard+=unnamedplus

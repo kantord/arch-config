@@ -180,20 +180,18 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    # IMPORTANT: colors have to be defined in quotation marks.
-    # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#000000"
-    foreground = "#888888"
-    timeout = 10
+    background = "#181818"
+    foreground = "#E3C7AF"
+    timeout = 5
 
 [urgency_normal]
-    background = "#000000"
-    foreground = "#ffffff"
-    timeout = 10
+    background = "#181818"
+    foreground = "#E3C7AF"
+    timeout = 20
 
 [urgency_critical]
-    background = "#900000"
-    foreground = "#ffffff"
+    background = "#181818"
+    foreground = "#E3C7AF"
     timeout = 0
 
 #[espeak]

@@ -29,6 +29,7 @@ link luakit ~/.config/
 link .zpreztorc
 link .Xresources
 link .tmux.conf
+link conky.conf ~/.config/conky/conky.conf
 
 # set up vim packages
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

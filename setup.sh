@@ -28,6 +28,7 @@ link terminator ~/.config/terminator
 link luakit ~/.config/
 link .zpreztorc
 link .Xresources
+link .tmux.conf
 
 # set up vim packages
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

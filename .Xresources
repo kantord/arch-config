@@ -5,6 +5,7 @@ Xft.rgba: rgb
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
+
 rofi.width:		50
 rofi.padding:	200
 rofi.fullscreen: true
@@ -52,8 +53,8 @@ rofi.lines:		20
 *.color7:       #34302d
 *.color15:      #4c4742
 
-urxvt.font: xft:Inconsolata\ for\ Powerline:pixelsize=14
-urxvt.boldFont: xft:Inconsolata\ for\ Powerline:pixelsize=14
+urxvt.font: xft:Inconsolata\ for\ Powerline:pixelsize=14:antialias=true
+urxvt.boldFont: xft:Inconsolata\ for\ Powerline:pixelsize=14:antialias=true
 urxvt.fading: 0
 urxvt.scrollBar: None
 urxvt.termName: rxvt-256color

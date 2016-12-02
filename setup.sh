@@ -68,7 +68,7 @@ gsettings set org.gnome.desktop.lockdown disable-lock-screen true
 
 
 # Default applications
-xdg-settings set default-web-browser luakit.desktop
+xdg-settings set default-web-browser google-chrome.desktop
 
 
 # Set up global gitignore

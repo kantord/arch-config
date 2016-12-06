@@ -1443,7 +1443,12 @@ xkb_symbols "intl-unicode" {
 
 
  key <AB03> { [	   c,          C,     ccedilla,             Ccedilla ] };
+ key <AB02> { [	   x,          X,     U021B,             U021A ] };
+ key <AB01> { [	   z,          Z,     U0219,             U0218] };
+ key <AD04> { [    r,          R,     U0103,            U0102] };
+ key <AD05> { [    t,          T,     U00E2,            U00C2] };
 
+ key <AC08> { [	   k,          K,             U00EE,                U00CE ] };
  key <AC04> { [	   f,          F,             otilde,                Otilde ] };
  key <AC03> { [	   d,          D,             atilde,                Atilde ] };
 

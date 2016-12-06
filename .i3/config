@@ -222,8 +222,8 @@ for_window [title="^Floating Calculator$"] floating enable
 # smart_borders on
 
 # border color for focused window
-client.focused #00000000 #9999ff55 #ffffff
-client.unfocused #00000000 #ff000000 #ffffff 
+client.focused #00000000 #9999ff66 #ffffff
+client.unfocused #00000000 #00000044 #dddddd 
 client.focused_inactive #00000000 #00000000 #ffffff
 
 # shadows

@@ -90,9 +90,8 @@ set relativenumber
 "colorscheme inkpot
 "colorscheme colorsbox-material
 let g:one_allow_italics = 1 
-set background=dark
-"colorscheme one
-colorscheme default
+set t_Co=256
+colorscheme calmar256-light
 set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
 "set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 11
  "set guifont=Input\ Mono\ Semi-Light\ 11

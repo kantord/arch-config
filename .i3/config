@@ -39,6 +39,12 @@ bindsym $mod+N exec "sh ~/repos/arch-config/lock.sh"
 bindsym $mod+F1 exec "setxkbmap custom intl-unicode -option caps:escape"
 bindsym $mod+F8 exec "~/repos/rofi-netctl/rofi-netctl.sh"
 
+# Pomodoro shortcuts
+bindsym $mod+F9 exec "python ~/repos/i3-gnome-pomodoro/pomodoro-client.py start"
+bindsym $mod+F10 exec "python ~/repos/i3-gnome-pomodoro/pomodoro-client.py toggle"
+bindsym $mod+F11 exec "python ~/repos/i3-gnome-pomodoro/pomodoro-client.py skip"
+bindsym $mod+F12 exec "python ~/repos/i3-gnome-pomodoro/pomodoro-client.py stop"
+
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 bindsym $mod+d exec i3-dmenu-desktop --dmenu='rofi -dmenu -i -p ""'
@@ -189,6 +195,13 @@ bindsym XF86AudioMute exec "amixer set Master toggle & killall -USR1 i3status"
 bindsym XF86AudioMicMute exec "amixer set Capture toggle"
 
 
+# The middle button over a titlebar kills the window
+bindsym --release button2 kill
+
+# The middle button and a modifer over any part of the window kills the window
+bindsym --whole-window $mod+button2 kill
+
+
 # scrot & gimp - root
 bindsym Print exec scrot -e 'mv $f ~/pics/screenshots'
 # scrot & gimp - select window or rectangle
@@ -230,7 +243,8 @@ client.focused_inactive #00000000 #00000000 #ffffff
 #exec compton -bc -r 7 -l -9 -t -9 --shadow-exclude '_GTK_FRAME_EXTENTS@:c'
 exec compton --config ~/.i3/compton.conf &
 exec dunst -config ~/repos/arch-config/dunst_config &
-exec xrdb ~/.Xresources
+exec xrdb ~/.Xresources &
+exec python ~/repos/i3-gnome-/pomodoro-client.py deamon &
 exec --no-startup-id xautolock -time 4 -locker "sh ~/repos/arch-config/lock.sh"
 
 no_focus [window_role="browser"]

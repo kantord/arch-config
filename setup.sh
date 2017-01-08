@@ -7,6 +7,9 @@ mkdir -p ~/pics/screenshots
 # install & update submodules
 git submodule update --init --recursive
 
+# avoid some headaches in the future
+sudo pacman -Sy archlinux-keyring
+
 # upgrade arch packages
 yaourt -Syu --aur --devel --noconfirm
 

@@ -10,3 +10,6 @@
 [submodule "i3-workflow"]
 	path = i3-workflow
 	url = https://github.com/kdani3/i3-workflow
+[submodule "pomodoro"]
+	path = pomodoro
+	url = https://github.com/kdani3/i3-gnome-pomodoro

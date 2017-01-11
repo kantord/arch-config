@@ -247,6 +247,7 @@ exec xrdb ~/.Xresources &
 exec python ~/repos/arch-config/pomodoro/pomodoro-client.py deamon &
 exec --no-startup-id xautolock -time 4 -locker "sh ~/repos/arch-config/lock.sh"
 
-no_focus [window_role="browser"]
+exec --no-startup-id nm-applet &
 
-exec --no-startup-id nm-applet
+
+exec --no-startup-id "bash ~/repos/arch-config/start_layout.sh"

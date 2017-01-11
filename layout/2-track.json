@@ -1,0 +1,16 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "user_off",
+    "name": "Habitica | Tasks",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^Google\\-chrome$",
+        "instance": "^habitica\\.com$"
+       }
+    ],
+    "type": "con"
+}
+

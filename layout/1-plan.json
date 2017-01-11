@@ -1,0 +1,26 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "Gnome-calendar"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "title": "urxvt-planner"
+       }
+    ],
+    "type": "con"
+}

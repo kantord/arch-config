@@ -15,43 +15,45 @@ rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
 rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
 rofi.lines:		20
 
+#define base00 #2C3E50
+#define base01 #34495E
+#define base02 #7F8C8D
+#define base03 #95A5A6
+#define base04 #BDC3C7
+#define base05 #e0e0e0
+#define base06 #f5f5f5
+#define base07 #ECF0F1
+#define base08 #E74C3C
+#define base09 #E67E22
+#define base0A #F1C40F
+#define base0B #2ECC71
+#define base0C #1ABC9C
+#define base0D #3498DB
+#define base0E #9B59B6
+#define base0F #be643c
 
-! special
-*.foreground:   #34302d
-*.background:   #f5e7de
-*.cursorColor:  #34302d
+*.foreground:   base05
+*.background:   base00
+*.cursorColor:  base05
 
-! black
-*.color0:       #666661
-*.color8:       #7f7f7a
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
 
-! red
-*.color1:       #992e2e
-*.color9:       #b23636
+*.color8:       base03
+*.color9:       base09
+*.color10:      base01
+*.color11:      base02
+*.color12:      base04
+*.color13:      base06
+*.color14:      base0F
+*.color15: base07
 
-! green
-*.color2:       #4c3226
-*.color10:      #664233
-
-! yellow
-*.color3:       #a67c53
-*.color11:      #bf8f60
-
-! blue
-*.color4:       #4c7399
-*.color12:      #5986b2
-
-! magenta
-*.color5:       #bf9986
-*.color13:      #d9ae98
-
-! cyan
-*.color6:       #d97742
-*.color14:      #f2854a
-
-! white
-*.color7:       #34302d
-*.color15:      #4c4742
 
 urxvt.font: xft:Inconsolata\ for\ Powerline:pixelsize=14:antialias=true
 urxvt.boldFont: xft:Inconsolata\ for\ Powerline:pixelsize=14:antialias=true

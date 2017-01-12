@@ -10,7 +10,7 @@ call vundle#begin()
 " Set up plugins here
 Plugin 'gmarik/Vundle.vim'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'junegunn/seoul256.vim'
+"Plugin 'junegunn/seoul256.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'https://github.com/kien/ctrlp.vim.git'
@@ -26,36 +26,37 @@ Plugin 'MarcWeber/vim-addon-mw-utils' " Needed by snipmate
 Plugin 'tomtom/tlib_vim' " Needed by snipmate
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
-Plugin 'vim-scripts/AutumnLeaf'
+"Plugin 'vim-scripts/AutumnLeaf'
 Plugin 'gregsexton/Gravity'
 Plugin 'gregsexton/MatchTag'
-Plugin 'blerins/flattown'
-Plugin 'vim-scripts/candycode.vim'
-Plugin 'chriskempson/vim-tomorrow-theme'
-Plugin 'jnurmine/Zenburn'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-colorscheme-switcher'
-Plugin 'morhetz/gruvbox'
+"Plugin 'blerins/flattown'
+"Plugin 'vim-scripts/candycode.vim'
+"Plugin 'chriskempson/vim-tomorrow-theme'
+"Plugin 'jnurmine/Zenburn'
+"Plugin 'flazz/vim-colorschemes'
+"Plugin 'xolox/vim-misc'
+"Plugin 'xolox/vim-colorscheme-switcher'
+"Plugin 'morhetz/gruvbox'
 Plugin 'SirVer/ultisnips'
 Plugin 'dkprice/vim-easygrep.git'
 Plugin 'tpope/vim-fugitive'
-Plugin 'elentok/plaintasks.vim'
+"Plugin 'elentok/plaintasks.vim'
 Bundle 'lrvick/Conque-Shell'
 Plugin 'sjl/gundo.vim'
-Plugin 'koron/minimap-vim'
-Plugin 'wikitopian/hardmode'
+"Plugin 'koron/minimap-vim'
+"Plugin 'wikitopian/hardmode'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'NLKNguyen/papercolor-theme'
+"Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'reedes/vim-wordy'
-Plugin 'junegunn/limelight.vim'
+"Plugin 'junegunn/limelight.vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'yegappan/greplace'
 Plugin 'Yggdroot/indentLine'
 Plugin 'itchyny/lightline.vim'
+Plugin 'chriskempson/base16-vim'
 
 
 call vundle#end()
@@ -90,8 +91,10 @@ set relativenumber
 "colorscheme inkpot
 "colorscheme colorsbox-material
 let g:one_allow_italics = 1 
-set t_Co=256
-colorscheme calmar256-light
+"set t_Co=256
+set t_Co=16
+"colorscheme calmar256-light
+colorscheme base16-flat
 set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
 "set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 11
  "set guifont=Input\ Mono\ Semi-Light\ 11

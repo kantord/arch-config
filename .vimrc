@@ -162,11 +162,6 @@ set nojoinspaces " Prevents inserting two spaces after punctuation on a join (J)
 set history=1000 " Longer edit history
 
 
-" Spell checking
-set spell " Enable spell checking
-set spelllang=en,hu,pt
-
-
 " save with Ctrl-S
 map <C-S> :w<RETURN>
 
@@ -307,3 +302,11 @@ set guicursor=a:blinkon0
 
 " System clipboard
 set clipboard+=unnamedplus
+
+" Spell checking
+
+set spell " Enable spell checking
+set spelllang=en,hu,pt,es,ca,ro,de
+
+
+

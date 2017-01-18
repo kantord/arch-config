@@ -244,10 +244,10 @@ client.focused_inactive #00000000 #00000000 #ffffff
 exec compton --config ~/.i3/compton.conf &
 exec dunst -config ~/repos/arch-config/dunst_config &
 exec xrdb ~/.Xresources &
-exec python ~/repos/arch-config/pomodoro/pomodoro-client.py deamon &
+exec python ~/repos/arch-config/pomodoro/pomodoro-client.py daemon &
 exec --no-startup-id xautolock -time 4 -locker "sh ~/repos/arch-config/lock.sh"
 
 exec --no-startup-id nm-applet &
 
 
-exec --no-startup-id "bash ~/repos/arch-config/start_layout.sh"
+exec --no-startup-id bash ~/repos/arch-config/start_layout.sh &

@@ -44,7 +44,7 @@ imagemagick
 meld
 firefox
 luakit
-google-chrome
+chromium
 wget
 ifuse
 usbmuxd

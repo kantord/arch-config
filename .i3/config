@@ -222,6 +222,8 @@ bindsym $mod+Shift+S sticky toggle
 for_window [class="^.*"] border none
 for_window [window_role="pop-up"] floating enable
 for_window [class="google-chrome"] floating disable
+for_window [class="chromium"] floating disable
+for_window [class="Chromium"] floating disable
 for_window [class="Google-chrome"] floating disable
 for_window [window_role="task_dialog"] floating enable
 for_window [title="^Floating Calculator$"] floating enable

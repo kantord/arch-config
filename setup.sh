@@ -33,6 +33,7 @@ link .zpreztorc
 link .Xresources
 link .tmux.conf
 link conky.conf ~/.config/conky/conky.conf
+link ./urxvt-config-reload/config-reload/* ~/.urxvt/ext/
 
 # set up vim packages
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -41,6 +42,9 @@ vim +PluginUpdate +qall
 
 # set up python packages
 sudo pip install --upgrade -r requirements.txt
+
+# set up node packages
+sudo npm install sshync -g
 
 # rebuild YCM
 cd ~/.vim/bundle/YouCompleteMe/

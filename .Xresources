@@ -15,22 +15,25 @@ rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
 rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
 rofi.lines:		20
 
-#define base00 #2C3E50
-#define base01 #34495E
-#define base02 #7F8C8D
-#define base03 #95A5A6
-#define base04 #BDC3C7
-#define base05 #e0e0e0
-#define base06 #f5f5f5
-#define base07 #ECF0F1
-#define base08 #E74C3C
-#define base09 #E67E22
-#define base0A #F1C40F
-#define base0B #2ECC71
-#define base0C #1ABC9C
-#define base0D #3498DB
-#define base0E #9B59B6
-#define base0F #be643c
+! Base16 Tomorrow
+! Scheme: Chris Kempson (http://chriskempson.com)
+
+#define base00 #ffffff
+#define base01 #e0e0e0
+#define base02 #d6d6d6
+#define base03 #8e908c
+#define base04 #969896
+#define base05 #4d4d4c
+#define base06 #282a2e
+#define base07 #1d1f21
+#define base08 #c82829
+#define base09 #f5871f
+#define base0A #eab700
+#define base0B #718c00
+#define base0C #3e999f
+#define base0D #4271ae
+#define base0E #8959a8
+#define base0F #a3685a
 
 *.foreground:   base05
 *.background:   base00
@@ -52,8 +55,7 @@ rofi.lines:		20
 *.color12:      base04
 *.color13:      base06
 *.color14:      base0F
-*.color15: base07
-
+*.color15:      base07
 
 urxvt.font: xft:Inconsolata\ for\ Powerline:pixelsize=14:antialias=true
 urxvt.boldFont: xft:Inconsolata\ for\ Powerline:pixelsize=14:antialias=true

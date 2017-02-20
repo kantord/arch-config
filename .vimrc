@@ -94,7 +94,7 @@ let g:one_allow_italics = 1
 "set t_Co=256
 set t_Co=16
 "colorscheme calmar256-light
-colorscheme base16-flat
+colorscheme base16-tomorrow
 set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
 "set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 11
  "set guifont=Input\ Mono\ Semi-Light\ 11

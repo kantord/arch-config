@@ -179,7 +179,7 @@ bar {
         position bottom
         colors {
              #palette: http://paletton.com/#uid=33k0u0kjyxS9zQMf0H9nvtprWp7
-            background #00000000
+            background #ffffff00
             statusline #ffffff #ffffff #ffffff
             separator #ffffff00
             focused_workspace  #4099a100 #ffffff33 #ffffff
@@ -251,5 +251,6 @@ exec --no-startup-id xautolock -time 4 -locker "sh ~/repos/arch-config/lock.sh"
 
 exec --no-startup-id nm-applet &
 
+exec --no-startup-id sshync ~/Sync kdani@daniel-kantor.com:Sync &
 
 exec --no-startup-id bash ~/repos/arch-config/start_layout.sh &

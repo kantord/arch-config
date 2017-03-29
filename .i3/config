@@ -37,6 +37,7 @@ bindsym $mod+Return exec "urxvt"
 bindsym $mod+Shift+q kill
 bindsym $mod+N exec "sh ~/repos/arch-config/lock.sh"
 bindsym $mod+F1 exec "setxkbmap custom intl-unicode -option caps:escape"
+bindsym $mod+F2 exec "setxkbmap hu"
 bindsym $mod+F8 exec "~/repos/rofi-netctl/rofi-netctl.sh"
 
 # Pomodoro shortcuts
@@ -250,6 +251,8 @@ exec python ~/repos/arch-config/pomodoro/pomodoro-client.py daemon &
 exec --no-startup-id xautolock -time 4 -locker "sh ~/repos/arch-config/lock.sh"
 
 exec --no-startup-id nm-applet &
+
+exec xinput set-prop 12 "libinput Accel Speed" 1.0 &
 
 
 exec --no-startup-id bash ~/repos/arch-config/start_layout.sh &

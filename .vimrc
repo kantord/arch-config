@@ -309,4 +309,4 @@ set spell " Enable spell checking
 set spelllang=en,hu,pt,es,ca,ro,de
 
 
-
+set mouse=a

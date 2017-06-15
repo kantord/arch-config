@@ -34,6 +34,7 @@ xrdb ~/.Xdefault &
 feh --bg-fill --magick-timeout 1 ~/.i3/wallpapers/active &
 /usr/lib/gnome-settings-daemon/gnome-settings-daemon &
 gnome-pomodoro --no-default-window &
+dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
 
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets)
 export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO

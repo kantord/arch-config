@@ -13,7 +13,7 @@ sudo pacman -Sy archlinux-keyring
 # upgrade arch packages
 yaourt -Syu --aur --devel --noconfirm
 
-install uninstalled arch packages
+# install arch packages
 for package in `comm -23 <(cat packages.txt | sort) <(yaourt -Qqe | sort)`; do
      echo "Installing $package..."
      yaourt -S $package --noconfirm

@@ -163,3 +163,5 @@ zstyle ':prezto:module:prompt' theme 'paradox'
 
 # Integrate with iTerm2.
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+
+alias startx=ssh-agent startx

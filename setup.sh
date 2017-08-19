@@ -34,6 +34,7 @@ link .Xresources
 link .tmux.conf
 link conky.conf ~/.config/conky/conky.conf
 link ./urxvt-config-reload/config-reload/* ~/.urxvt/ext/
+link ./taskwarrior.timer /etc/systemd/system/taskwarrior.timer
 
 # set up vim packages
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

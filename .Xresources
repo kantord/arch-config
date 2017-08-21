@@ -64,7 +64,7 @@ rofi.lines:		20
 *.color15:      base07
 
 !urxvt.font: xft:Inconsolata\ for\ Powerline:pixelsize=14:antialias=true
-URxvt*font: xft:Iosevka:size=8
+URxvt*font: xft:Iosevka:pixelsize=12:antialias=true
 !urxvt.boldFont: xft:Inconsolata\ for\ Powerline:pixelsize=14:antialias=true
 urxvt.fading: 0
 urxvt.scrollBar: None

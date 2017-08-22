@@ -70,3 +70,4 @@ gnome-pomodoro
 gnome-control-center
 perl-anyevent-i3
 ttf-iosevka
+ttf-iosevka-term

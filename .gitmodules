@@ -13,3 +13,6 @@
 [submodule "pomodoro"]
 	path = pomodoro
 	url = https://github.com/kdani3/i3-gnome-pomodoro
+[submodule "rofidmenu"]
+	path = rofidmenu
+	url = https://github.com/kantord/rofidmenu.git

@@ -57,6 +57,7 @@ Plugin 'yegappan/greplace'
 "Plugin 'Yggdroot/indentLine'
 Plugin 'itchyny/lightline.vim'
 Plugin 'chriskempson/base16-vim'
+Bundle 'sonph/onehalf', {'rtp': 'vim/'}
 
 
 call vundle#end()
@@ -95,6 +96,7 @@ let g:one_allow_italics = 1
 set t_Co=16
 "colorscheme calmar256-light
 colorscheme base16-oceanicnext
+colorscheme onehalflight
 set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
 "set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 11
  "set guifont=Input\ Mono\ Semi-Light\ 11

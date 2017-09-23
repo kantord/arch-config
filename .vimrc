@@ -3,7 +3,6 @@ set nocompatible
 set nowrap
 filetype off 
 
-
 " Plugins
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -135,9 +134,22 @@ if has('persistent_undo')
 endif
 
 
-" Wildmenu settings
-set wildmode=longest,list,full
+" Wildmenu completion "
 set wildmenu
+set wildmode=list:longest
+set wildignore+=.hg,.git,.svn " Version Controls"
+set wildignore+=*.aux,*.out,*.toc "Latex Indermediate files"
+set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg "Binary Imgs"
+set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest "Compiled Object files"
+set wildignore+=*.spl "Compiled speolling world list"
+set wildignore+=*.sw? "Vim swap files"
+set wildignore+=*.DS_Store "OSX SHIT"
+set wildignore+=*.luac "Lua byte code"
+set wildignore+=migrations "Django migrations"
+set wildignore+=*.pyc "Python Object codes"
+set wildignore+=*.orig,*.rej "Merge resolution files"
+
+
 
 " Add the virtualenv's site-packages to vim path
 py << EOF
@@ -227,3 +239,14 @@ augroup myCmds
 au!
 autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
+
+
+" highlight line
+set cul!
+
+" Long lines
+set wrap
+set textwidth=79
+set colorcolumn=+1
+set formatoptions=qrn1
+

@@ -165,3 +165,8 @@ zstyle ':prezto:module:prompt' theme 'paradox'
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 
 alias startx=ssh-agent startx
+function secure_chromium {
+    port=8000
+    chromium --proxy-server="socks://localhost:$port" &
+    exit
+}

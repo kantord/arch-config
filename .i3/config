@@ -222,7 +222,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 12.5 # decrease screen bright
 # Sticky windows
 bindsym $mod+Shift+S sticky toggle
 
-for_window [class="^.*"] border none
+for_window [class="^.*"] border pixel 0
 for_window [window_role="pop-up"] floating enable
 for_window [class="google-chrome"] floating disable
 for_window [class="chromium"] floating disable
@@ -233,16 +233,16 @@ for_window [title="^Floating Calculator$"] floating enable
 #for_window [class="^Spotify$"] floating enable;border normal
 
 # gaps
- gaps outer 0
+ gaps outer 10
  gaps inner 10
 #smart_gaps on
 #smart_gaps_size 12
 # smart_borders on
 
 # border color for focused window
-client.focused #00000000 #9999ff66 #ffffff
-client.unfocused #00000000 #00000044 #dddddd 
-client.focused_inactive #00000000 #00000000 #ffffff
+#client.focused #00000000 #9999ff66 #ffffff
+#client.unfocused #00000000 #00000044 #dddddd 
+#client.focused_inactive #00000000 #00000000 #ffffff
 
 # shadows
 #exec compton -bc -r 7 -l -9 -t -9 --shadow-exclude '_GTK_FRAME_EXTENTS@:c'

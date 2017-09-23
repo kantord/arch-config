@@ -55,9 +55,10 @@ Plugin 'reedes/vim-wordy'
 "Plugin 'ternjs/tern_for_vim'
 Plugin 'yegappan/greplace'
 "Plugin 'Yggdroot/indentLine'
-Plugin 'itchyny/lightline.vim'
+"Plugin 'itchyny/lightline.vim'
 Plugin 'chriskempson/base16-vim'
 Bundle 'sonph/onehalf', {'rtp': 'vim/'}
+Plugin 'NerdyPepper/chestnut.vim'
 
 
 call vundle#end()
@@ -95,17 +96,17 @@ let g:one_allow_italics = 1
 "set t_Co=256
 set t_Co=16
 "colorscheme calmar256-light
-colorscheme base16-oceanicnext
-colorscheme onehalflight
-set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
+"colorscheme base16-oceanicnext
+"colorscheme chestnut
+"set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
 "set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 11
  "set guifont=Input\ Mono\ Semi-Light\ 11
 "set guifont=Inconsolata\ 11
 "set guifont=M+\ 2m\ 9
-set linespace=3
+"set linespace=3
 set colorcolumn=80,160,240,320,400,480,560
 highlight ColorColumn guibg=Gray14
-set cursorline
+"set cursorline
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
@@ -312,3 +313,6 @@ set spelllang=en,hu,pt,es,ca,ro,de
 
 
 set mouse=a
+:set noshowmode
+:set noru
+set laststatus=0

@@ -4,58 +4,36 @@ set nowrap
 filetype off 
 
 
+" Plugins
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Set up plugins here
 Plugin 'gmarik/Vundle.vim'
 Plugin 'easymotion/vim-easymotion'
-"Plugin 'junegunn/seoul256.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'https://github.com/kien/ctrlp.vim.git'
 Plugin 'ivalkeen/vim-ctrlp-tjump'
-"Plugin 'kchmck/vim-coffee-script'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'nvie/vim-flake8'
 Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
-Plugin 'MarcWeber/vim-addon-mw-utils' " Needed by snipmate
-Plugin 'tomtom/tlib_vim' " Needed by snipmate
-"Plugin 'garbas/vim-snipmate'
-"Plugin 'honza/vim-snippets'
-"Plugin 'vim-scripts/AutumnLeaf'
 Plugin 'gregsexton/Gravity'
 Plugin 'gregsexton/MatchTag'
-"Plugin 'blerins/flattown'
-"Plugin 'vim-scripts/candycode.vim'
-"Plugin 'chriskempson/vim-tomorrow-theme'
-"Plugin 'jnurmine/Zenburn'
-"Plugin 'flazz/vim-colorschemes'
-"Plugin 'xolox/vim-misc'
-"Plugin 'xolox/vim-colorscheme-switcher'
-"Plugin 'morhetz/gruvbox'
-"Plugin 'SirVer/ultisnips'
 Plugin 'dkprice/vim-easygrep.git'
 Plugin 'tpope/vim-fugitive'
-"Plugin 'elentok/plaintasks.vim'
 Bundle 'lrvick/Conque-Shell'
 Plugin 'sjl/gundo.vim'
-"Plugin 'koron/minimap-vim'
-"Plugin 'wikitopian/hardmode'
-"Plugin 'elixir-lang/vim-elixir'
+Plugin 'koron/minimap-vim'
+Plugin 'wikitopian/hardmode'
 Plugin 'airblade/vim-gitgutter'
-"Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'reedes/vim-wordy'
-"Plugin 'junegunn/limelight.vim'
-"Plugin 'Chiel92/vim-autoformat'
-"Plugin 'ternjs/tern_for_vim'
+Plugin 'Chiel92/vim-autoformat'
 Plugin 'yegappan/greplace'
-"Plugin 'Yggdroot/indentLine'
-"Plugin 'itchyny/lightline.vim'
+Plugin 'Yggdroot/indentLine'
 Plugin 'chriskempson/base16-vim'
 Bundle 'sonph/onehalf', {'rtp': 'vim/'}
 Plugin 'NerdyPepper/chestnut.vim'
@@ -86,28 +64,10 @@ set relativenumber
 
 
 " Look & Feel
-" colorscheme solarized
- "colorscheme autumnleaf
-" colorscheme flattown
-" colorscheme gruvbox
-"colorscheme inkpot
-"colorscheme colorsbox-material
 let g:one_allow_italics = 1 
-"set t_Co=256
 set t_Co=16
-"colorscheme calmar256-light
-"colorscheme base16-oceanicnext
-"colorscheme chestnut
-"colorscheme base16-atelier-forest-light
-"set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
-"set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 11
- "set guifont=Input\ Mono\ Semi-Light\ 11
-"set guifont=Inconsolata\ 11
-"set guifont=M+\ 2m\ 9
-"set linespace=3
 set colorcolumn=80,160,240,320,400,480,560
 highlight ColorColumn guibg=Gray14
-"set cursorline
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
@@ -122,16 +82,6 @@ set ignorecase " Case insensitive search
 set smartcase " Case sensitive when uc present
 
 
-" Ack settings
-map <C-F> :Ack 
-" Use ag instead of ack
-let g:ackprg = 'ag --nogroup --nocolor --column'
-
-" When you press gv you Ag after the selected text
-vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
-
-" Open Ag and put the cursor in the right position
-map <leader>g :Ag 
 
 " When you press <leader>r you can search and replace the selected text
 vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
@@ -165,19 +115,9 @@ set nojoinspaces " Prevents inserting two spaces after punctuation on a join (J)
 " History settings
 set history=1000 " Longer edit history
 
-
-" save with Ctrl-S
-map <C-S> :w<RETURN>
-
-
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
-
-
-" Hide the mouse cursor while typing
-set mousehide
-
 
 " persistent undo
 " http://stackoverflow.com/a/22676189
@@ -198,16 +138,6 @@ endif
 set wildmode=longest,list,full
 set wildmenu
 
-
-" SnipMate settings
-imap <C-J> <Plug>snipMateNextOrTrigger
-smap <C-J> <Plug>snipMateNextOrTrigger
-
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<c-space>"
-let g:UltiSnipsJumpForwardTrigger="<c-space>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
 " Add the virtualenv's site-packages to vim path
 py << EOF
 import os.path
@@ -220,23 +150,9 @@ if 'VIRTUAL_ENV' in os.environ:
     execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-
-" Auto indent pasted text
-nnoremap p p=`]<C-o>
-nnoremap P P=`]<C-o>
-
-
-" Tagbar mapping
-nmap <C-F4> :TagbarToggle<CR>
-
 " Folding with space
-"nnoremap <space> za
-"vnoremap <space> zf
-
-" YCM tuning
-let g:ycm_add_preview_to_completeopt=0
-let g:ycm_confirm_extra_conf=0
-set completeopt-=preview
+nnoremap <space> za
+vnoremap <space> zf
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -272,35 +188,6 @@ let NERDTreeShowHidden=1
 " Hide files from tree
 let NERDTreeIgnore = ['\.pyc$', '\.cache', '__pycache__', '.git', 'env', 'env2', 'env3', 'venv']
 
-" Disable colors in shells
-let g:ConqueTerm_Color = 0
-
-" Hide mode (it's on the bar)
-set noshowmode
-
-" Lightline conf
-
-let g:lightline = {
-            \ 'colorscheme': 'wombat',
-            \ 'active': {
-            \   'left': [ [ 'mode', 'paste' ],
-            \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
-            \ },
-            \ 'component': {
-            \   'readonly': '%{&filetype=="help"?"":&readonly?"⭤":""}',
-            \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-            \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
-            \ },
-            \ 'component_visible_condition': {
-            \   'readonly': '(&filetype!="help"&& &readonly)',
-            \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-            \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
-            \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' }
-            \ }
-
-
 " No cursor blink
 set guicursor=a:blinkon0
 
@@ -314,8 +201,8 @@ set spelllang=en,hu,pt,es,ca,ro,de
 
 
 set mouse=a
-:set noshowmode
-:set noru
+set noshowmode
+set noru
 set laststatus=0
 
 if filereadable(expand("~/.vimrc_background"))

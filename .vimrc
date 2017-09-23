@@ -98,6 +98,7 @@ set t_Co=16
 "colorscheme calmar256-light
 "colorscheme base16-oceanicnext
 "colorscheme chestnut
+"colorscheme base16-atelier-forest-light
 "set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
 "set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 11
  "set guifont=Input\ Mono\ Semi-Light\ 11
@@ -316,3 +317,8 @@ set mouse=a
 :set noshowmode
 :set noru
 set laststatus=0
+
+if filereadable(expand("~/.vimrc_background"))
+    let base16colorspace=256
+    source ~/.vimrc_background
+endif

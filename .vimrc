@@ -32,12 +32,11 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'reedes/vim-wordy'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'yegappan/greplace'
-Plugin 'Yggdroot/indentLine'
+"Plugin 'Yggdroot/indentLine'
 Plugin 'chriskempson/base16-vim'
-Bundle 'sonph/onehalf', {'rtp': 'vim/'}
-Plugin 'NerdyPepper/chestnut.vim'
 Plugin 'jakedouglas/exuberant-ctags'
 Plugin 'LanguageTool'
+Plugin 'lambdatoast/elm.vim'
 
 
 call vundle#end()

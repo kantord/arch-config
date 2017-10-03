@@ -27,6 +27,7 @@ link() {
 link .xinitrc
 link .i3
 link .vimrc
+link .zshrc
 link terminator ~/.config/terminator
 link luakit ~/.config/
 link .zpreztorc

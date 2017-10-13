@@ -248,6 +248,8 @@ for_window [class="chromium"] floating disable
 for_window [class="Chromium"] floating disable
 for_window [class="Google-chrome"] floating disable
 for_window [window_role="task_dialog"] floating enable
+for_window [title="Open Files"] floating enable
+for_window [title="pinentry"] floating enable
 for_window [title="^Floating Calculator$"] floating enable
 #for_window [class="^Spotify$"] floating enable;border normal
 

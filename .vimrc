@@ -164,9 +164,7 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 
 " Folding with space
-nnoremap <space> za
-vnoremap <space> zf
-
+"nnoremap <space> za "vnoremap <space> zf 
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -214,9 +212,9 @@ set spelllang=en,hu,pt,es,ca,ro,de
 
 
 set mouse=a
-set noshowmode
-set noru
-set laststatus=0
+"set noshowmode
+"set noru
+"set laststatus=0
 
 if filereadable(expand("~/.vimrc_background"))
     let base16colorspace=256
@@ -250,3 +248,4 @@ set textwidth=79
 set colorcolumn=+1
 set formatoptions=qrn1
 
+set backupcopy=yes

@@ -38,6 +38,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'jakedouglas/exuberant-ctags'
 Plugin 'LanguageTool'
 Plugin 'lambdatoast/elm.vim'
+Plugin 'wakatime/vim-wakatime'
 
 
 call vundle#end()

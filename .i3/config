@@ -288,4 +288,4 @@ exec --no-startup-id nm-applet &
 
 exec xinput set-prop 12 "libinput Accel Speed" 1.0 &
 
-exec --no-startup-id bash ~/repos/arch-config/start_layout.sh &
+/*exec --no-startup-id bash ~/repos/arch-config/start_layout.sh &*/

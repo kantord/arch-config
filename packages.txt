@@ -59,13 +59,9 @@ ranger
 highlight
 atool
 w3m
-lyx
 elinks
 poppler
-transmission-cli
 mediainfo
-telepathy
-gnome-calendar
 gnome-pomodoro
 gnome-control-center
 perl-anyevent-i3

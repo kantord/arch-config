@@ -67,3 +67,4 @@ gnome-control-center
 perl-anyevent-i3
 ttf-iosevka
 ttf-iosevka-term
+nerd-fonts-complete

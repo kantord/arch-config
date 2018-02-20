@@ -252,3 +252,5 @@ set colorcolumn=+1
 set formatoptions=qrn1
 
 set backupcopy=yes
+colorscheme base16-tomorrow-night
+hi Search cterm=reverse ctermbg=black ctermfg=3

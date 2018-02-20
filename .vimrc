@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'https://github.com/kien/ctrlp.vim.git'
+Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plugin 'ivalkeen/vim-ctrlp-tjump'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdcommenter'
@@ -39,6 +39,7 @@ Plugin 'jakedouglas/exuberant-ctags'
 Plugin 'LanguageTool'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'ryanoasis/vim-devicons'
 
 
 call vundle#end()

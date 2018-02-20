@@ -76,10 +76,10 @@ rofi.lines:		20
 
 !urxvt.font: xft:Inconsolata\ for\ Powerline:pixelsize=14:antialias=true
 
-URxvt.font : xft:Iosevka\ Term:pixelsize=12:antialias=true
-URxvt.boldFont : xft:Iosevka\ Term:pixelsize=12:style=Medium:antialias=true
-URxvt.italicFont : xft:Iosevka\ Term:pixelsize=12:style=Italic:antialias=true
-URxvt.boldItalicFont : xft:Iosevka\ Term:pixelsize=12:style=Bold Italic:antialias=true
+URxvt.font : xft:Iosevka Nerd Font Mono:pixelsize=12:antialias=true
+URxvt.boldFont : xft:Iosevka Nerd Font Mono:pixelsize=12:style=Bold:antialias=true
+URxvt.italicFont : xft:Iosevka Nerd Font Mono:pixelsize=12:style=Italic:antialias=true
+URxvt.boldItalicFont : xft:Iosevka Nerd Font Mono:pixelsize=12:style=Bold Italic:antialias=true
 !URxvt*font: xft:Iosevka\ Term\ Medium:pixelsize=12:antialias=true
 !urxvt.boldFont: xft:Iosevka\ Term:pixelsize=12:antialias=true
 urxvt.fading: 0

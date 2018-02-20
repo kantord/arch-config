@@ -19,7 +19,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Load the theme.
 #antigen theme https://github.com/sobolevn/sobole-zsh-theme
 #antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
-antigen theme refined
+antigen theme candy
 
 
 

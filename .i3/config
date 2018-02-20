@@ -290,4 +290,3 @@ exec xinput set-prop 12 "libinput Accel Speed" 1.0 &
 
 exec redshift &
 
-/*exec --no-startup-id bash ~/repos/arch-config/start_layout.sh &*/

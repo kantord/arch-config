@@ -1453,6 +1453,7 @@ xkb_symbols "intl-unicode" {
 
  key <AC07> { [	   j,          J,             U0131,          U0130] };
  key <AC08> { [	   k,          K,             U00EE,                U00CE ] };
+ key <AC09> { [	   l,          L,             U00B7,                U00B7 ] };
  key <AC04> { [	   f,          F,             otilde,                Otilde ] };
  key <AC03> { [	   d,          D,             atilde,                Atilde ] };
 
